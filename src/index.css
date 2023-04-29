@@ -1,0 +1,87 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+button:disabled {
+  cursor: none;
+  background: gainsboro;
+  pointer-events: none;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  padding: 48px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+  gap: 16px;
+  position: relative;
+  width: 500px;
+}
+
+.row {
+  border-bottom: 1px solid gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  padding: 8px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.down {
+  color: red;
+}
+
+.up {
+  color: green;
+}
+
+.search {
+  width: 240px;
+  font-size: 16px;
+  border: 1px solid lightgrey;
+  border-radius: 8px;
+  padding: 4px 8px;
+  outline: none;
+}
+
+.search:focus {
+  border: 1px solid steelblue;
+}
+
+.error {
+  color: red;
+}
+
+
+
+
