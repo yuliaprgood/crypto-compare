@@ -1,11 +1,10 @@
 import './App.css'
-import {Game} from "./components/game";
-import {CryptoCompare} from "./components/crypto-compare";
+import {Crypto} from "./components/crypto-compare-hooks";
 
 function App() {
   return (
     <div className="App">
-        <CryptoCompare />
+        <Crypto />
     </div>
   )
 }

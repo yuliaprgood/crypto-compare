@@ -1,7 +1,6 @@
 import React from "react";
 import {getMultiCoins, getSingleCoin} from "../../api";
 import {CurrencyInfo} from "../currency-info";
-import {Simulate} from "react-dom/test-utils";
 
 type CryptoCompareProps = {
 };

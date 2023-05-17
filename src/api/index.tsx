@@ -15,4 +15,3 @@ export const getMultiCoins = async (coins: string[]) => {
     const data = await res.json();
     return data;
 }
-

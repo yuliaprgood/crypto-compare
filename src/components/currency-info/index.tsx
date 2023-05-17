@@ -14,7 +14,7 @@ export function CurrencyInfo({name, price, dynamics, onDelete}: CurrencyInfoProp
     return (
         <div className={clsx('row', dynamics === 'down' && 'down', dynamics === 'up' && 'up')}>
             <div>
-                {`${name}     $${price ? price.USD : 'loading'}`}
+                {`${name} $${price ? price.USD : 'loading'}`}
             </div>
             <button type="button" onClick={() => onDelete(name)}>Delete</button>
         </div>
